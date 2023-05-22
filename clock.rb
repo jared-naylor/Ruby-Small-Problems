@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ## 'clock' class to determine the time
 class Clock
   attr_accessor :hours, :minutes

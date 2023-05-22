@@ -7,15 +7,15 @@ class Anagram
   end
 
   def match(array)
-    array.select do |word| 
+    array.select do |word|
       anagram?(@word, word) && word.downcase != @word.downcase
     end
   end
 
-  private 
+  private
 
   def sorted_word(word)
-    word.downcase.chars.sort 
+    word.downcase.chars.sort
   end
 
   def anagram?(word1, word2)

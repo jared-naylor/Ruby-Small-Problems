@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require_relative 'robot_name'
 
@@ -5,7 +7,7 @@ class RobotTest < Minitest::Test
   DIFFERENT_ROBOT_NAME_SEED = 1234
   SAME_INITIAL_ROBOT_NAME_SEED = 1000
 
-  NAME_REGEXP = /^[A-Z]{2}\d{3}$/
+  NAME_REGEXP = /^[A-Z]{2}\d{3}$/.freeze
 
   def test_has_name
     assert_match NAME_REGEXP, Robot.new.name
